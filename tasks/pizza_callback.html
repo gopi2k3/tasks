@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+text-align:center;
+line-height:20;
+}
+
+.btn{
+    background-color: #ffff0040;
+    padding: 7px 41px;
+    border: white;
+    border-radius: 24px;
+    font-size: 25px;
+    transition:0.5s ease all;
+	border:2px solid #ccc;
+}
+.btn:hover{
+
+padding:11px 50px;
+box-shadow:0 0 10px #ccc;
+color:red;
+
+}
+
+</style>
+
+</head>
+<body>
+
+
+<button class="btn">Place the order</button>
+<script>
+
+let btn=document.querySelector(".btn");
+
+
+btn.addEventListener('click',ans);
+
+
+function ans(){
+	let price=250;
+let minu=25
+	
+	console.log(`Order placed`)
+
+
+    setTimeout(()=>{
+		
+		console.log(` your Order prepare.....`);
+	},3000)    	
+	
+	  setTimeout((price,minu,amount)=>{
+		amount(price,minu)
+	 
+	},6000,price,minu,amount)  
+	
+	setTimeout(()=>{
+		
+		console.log(`Order delivered`)
+	},9000)
+	
+}
+
+
+function amount(price1,minu1){
+	
+	 console.log(`order price:${price1}RS, Deliver time:${minu1}Min`);
+}
+
+</script>
+</body>
+</html>

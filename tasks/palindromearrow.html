@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+
+
+<script>
+let num=parseInt(prompt("Enter A number"));
+
+
+
+let ans=a=>{
+	let c=0;
+	
+while(a>0){
+	
+	b=a%10;
+	 
+	a=parseInt(a/10);
+	
+    c=c*10+b;
+	
+
+}
+	return c
+
+}
+
+let result=(ans(num));
+
+if(result==num){
+	console.log(`number is palindrome`);
+}
+else{
+	console.log(`Number is Not Palindrome`)
+}
+
+
+</script>
+</body>
+</html>
